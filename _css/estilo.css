@@ -1,59 +1,95 @@
-charset
+@import url('https://fonts.googleapis.com/css2? family= Playfair+Display:wght@400;700 & family= Poppins:wght@400;700 & display=swap');
+
+ :root {
+     --text-black: black;
+     --text-white: white;
+     --background-header: black;
+     --background-white: white;
+     --text-cinza: #606060;
+     
+     --fonte-principal:'poppins', sans-serif;
+     --fonte-secundaria: 'Playfair Display', sans-serif;
+ }
+
+*{
+    font-family: var(--fonte-secundaria);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body{
-    
-    font-family: arial, sans-serif;
-    background-color:white;
-    color:rgba(0,0,0,1);
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+background-color:var(--background-white);
+color: var(--text-black);
+}
+
+ol{
+ margin-top: 20px;
+}
+
+li span{
+font-weight: 700;
 
 }
 h1#principal{
-    text-align: center;
+ font-family: var(--fonte-principal);
+ text-align: center;
+}
 
+h2{
+ margin: 20px 0px 20px 0px;
+ font-size: 20pt;
+ color: var(--text-black);
+ text-align: justify;
 }
+
 .cabecalho{
-    color: #ffffff;
-width: 1500px;
-background-color:black;
-margin: 20px 40px 20px 100px;
-padding: 5px;
+ color: var(--text-white);
+ width: 1500px;
+ background-color: var(--background-header);
+ padding: 5px;
 }
+
 .cabecalho{
-    border-bottom: 1px #606060 solid;
-    height: 50px;
+ border-bottom: 1px #606060 solid;
+ height: 50px;
 }
 
 p{
-    font-family: arial;
-    font-size: 12pt;
-    text-align: justify;
-    text-indent: 5px;
-
+ margin: 20px 0px;
+ max-width: 680px;
+ font-family: var(--fonte-secundaria);
+ font-size: 15px;
+ text-align: justify;
+ text-indent: 5px;
 }
-.cuidados{
-    font-family: arial;
-    font-size: 12pt;
-    text-align: justify;
-    text-decoration: none;
-    
-    }
-    .sites {
-        font-family: arial;
-        font-size: 12pt;
-        text-align: justify;
-        text-decoration: none;
-        text-decoration: underline;
-    }
-    
-    .corpo {
-        text-align: justify;
-            width: 1500px;
-            background-color:#ffffff;
-            margin: -20px auto 0px 100px;
-            box-shadow: 0px 0px 10px rgba(0,0,0,.5);
-            padding: 5px;
-    }  
-    .conteudo {
-        text-align: ;
-        color: #606060;
 
+main ul.cuidados{
+ font-size: 15px;
+ text-align: justify;
+ text-decoration: none;  
+}
+
+.sites {
+ 
+ font-size: 12px;
+ text-align: justify;
+ text-decoration: none;
+ text-decoration: underline;
+}
+    
+.corpo {   
+ padding: 40px 80px;
+ text-align: justify;
+ width: 1500px;
+ background-color:var(--background-white);
+ box-shadow: 0px 0px 10px rgba(0,0,0,.5);
+}  
+
+.conteudo {
+ color:var(--text-cinza);
     }
